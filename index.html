@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>toDoList</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-headling">toDoList</div>
+            <div class="panel-body">
+                <form onsubmit="return false">
+                    <div class="input-group">
+                        <input class="form-control" id="input" type="text" placeholder="type something...">
+                        <div class="input-group-addon" onclick="addElement()"><span class="input-group-text"><i class="fa fa-plus fa-fw" id="btn"></i></span></div>
+                    </div>
+                </form>
+                
+                <ul class="list-group" id="toDo">
+                    <li class="list-group-item">Go to the gym</li>
+                    <li class="list-group-item">Buy milk</li>
+                    <li class="list-group-item checked">Learn some JS</li>
+                </ul>
+            
+            </div>
+        </div>
+    </div>
+    <script src="toDoList.js"></script>
+</body>
+
+</html>
